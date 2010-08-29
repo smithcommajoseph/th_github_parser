@@ -1,0 +1,7 @@
+;$Id$
+name = GitHub feeds parser plugin
+description = adds the GitHub Parser option to the list of available Feeds Parsers
+package = Feeds
+dependencies[] = feeds
+core = 6.x
+php = 5.2

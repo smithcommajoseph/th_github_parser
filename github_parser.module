@@ -1,0 +1,23 @@
+<?php
+/**
+* Implementation of hook_feeds_plugins().
+*/
+function github_parser_feeds_plugins() {
+  $info = array();
+  $info['GitHubParser'] = array(
+    'name' => 'Git Hub Parser',
+    'description' => 'Parses github rss data.',
+    'handler' => array(
+      'parent' => 'FeedsParser',
+      'class' => 'GitHubParser',
+      'file' => 'github_parser.inc',
+      'path' => drupal_get_path('module', 'github_parser'),
+    ),
+  );
+  return $info; 
+}
+
+function github_parser_enable() {
+  //clear the cache to display in Feeds as available plugin.
+  cache_clear_all('plugins:feeds:plugins', 'cache');
+}
