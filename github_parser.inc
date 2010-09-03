@@ -28,7 +28,7 @@ class GitHubParser extends FeedsParser {
       $entries[] = array(
         'guid' => (string)$v->id,
         'title' => (string)$v->title,
-        'body' => $split_content,
+        'body' => $split_content[0][0],
         'url' => $raw_link,
         'post_date' => strtotime((string)$v->updated)
       );
