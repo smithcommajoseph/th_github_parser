@@ -5,5 +5,5 @@ package = Feeds
 dependencies[] = feeds
 core = 6.x
 project status url = "http://www.twohard.com/fserver"
-version = "6.x-1.0-alpha4"
+version = "6.x-1.0-alpha5"
 php = 5.2
