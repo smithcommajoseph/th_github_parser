@@ -1,4 +1,4 @@
-;$Id$
+; $Id: github_parser.info $
 name = GitHub feeds parser plugin
 description = adds the GitHub Parser option to the list of available Feeds Parsers
 package = Feeds

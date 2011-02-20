@@ -1,7 +1,7 @@
-$Id: README.txt $
+$Id: README.markdown $
 
 github_parser
-=========
+=============
 
 A basic Feeds module parser plugin.
 

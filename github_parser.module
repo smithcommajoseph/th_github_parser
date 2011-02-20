@@ -1,6 +1,8 @@
 <?php
+// $Id: github_parser.module $
+
 /**
-* Implementation of hook_feeds_plugins().
+* Implements hook_feeds_plugins().
 */
 function github_parser_feeds_plugins() {
   $info = array();
@@ -17,6 +19,9 @@ function github_parser_feeds_plugins() {
   return $info; 
 }
 
+/**
+ * Implements hook_enable()
+ */
 function github_parser_enable() {
   //clear the cache to display in Feeds as available plugin.
   cache_clear_all('plugins:feeds:plugins', 'cache');

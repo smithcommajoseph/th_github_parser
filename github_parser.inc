@@ -1,4 +1,6 @@
 <?php
+// $Id: github_parser.inc $
+
 /**
 * Parses GitHub Feeds
 */
